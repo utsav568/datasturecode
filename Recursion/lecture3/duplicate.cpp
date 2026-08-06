@@ -8,7 +8,7 @@ void subset(string ans ,string str,vector<string>&v,bool flag){
     char ch = str[0];
     if(str.length()==1){
         if(flag==true)subset(ans+ch,str.substr(1),v,true);
-        subset(ans,str.substr(1),v,true);
+         subset(ans,str.substr(1),v,true);
         return;
     }
     char dh = str[1];
@@ -18,15 +18,17 @@ void subset(string ans ,string str,vector<string>&v,bool flag){
     }
     else{//no duplicate
         if(flag==true)subset(ans+ch,str.substr(1),v,true);
-        subset(ans,str.substr(1),v,true);
+       subset(ans,str.substr(1),v,true);
     }
 }
 int main(){
-string str ="aaab";
+string str ="aab";
 vector<string>v;
 subset("",str,v,true);
 for(int i=0;i<v.size();i++){
     cout<<v[i]<<endl;
 }
+cout<<v[2];
+
 
 }
