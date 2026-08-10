@@ -9,7 +9,7 @@ int partition(int arr[],int si,int end){
     int pivotidx = count+si;
     swap(arr[si],arr[pivotidx]);
     int i= si;
-    int j=end;
+    int j=end; 
     while(i<pivotidx and j>pivotidx){
         if(arr[i]<pivot)i++;
         if(arr[j]>pivot)j--;
