@@ -10,8 +10,9 @@ int main() {
         }
         for(int k=i-1;k>=i;k++){
             cout<<"";
-        4
+        
 
         cout<<endl;
     }
+}
 }
