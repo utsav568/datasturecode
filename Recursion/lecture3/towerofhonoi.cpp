@@ -10,7 +10,9 @@ void hanoi(int n ,char a,char b,char c){
 }
 int main(){
 
-    int n =3;
+    int n;
+    cout<<"Enter the value :";
+    cin>>n;
 
     hanoi(n,'A','B','C');
 }
