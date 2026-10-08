@@ -21,7 +21,7 @@ Node *GetNode(int x) {
 void InsertLeft(int x) {
     Node *p = GetNode(x);
 
-    p->next = Right;
+    p->next = Left;
 
     if (Left != NULL)
         Left->prev = p;
@@ -52,12 +52,13 @@ void Display() {
         p = p->next;
     }
 }
-void InsertAray(int arr[],n,i,x){
-    for(int i=n-1;i>=1;i--){
-        arr[i+1]=arr[j];
-        arr[i]=x;
-        n+=1;
+
+void InsertArray(int arr[], int n, int i, int x) {
+    for (int j = n - 1; j >= i; j--) {
+        arr[j + 1] = arr[j];
     }
+
+    arr[i] = x;
 }
 
 int main() {

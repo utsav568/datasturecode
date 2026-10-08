@@ -23,10 +23,12 @@ void InsertLeft(int x) {
 
     p->next = left;
 
-    if (left != NULL)
+    if (left != NULL) {
         left->prev = p;
-    else
+    }
+    else {
         right = p;
+    }
 
     left = p;
 }
@@ -36,10 +38,12 @@ void InsertRight(int x) {
 
     p->prev = right;
 
-    if (right != NULL)
+    if (right != NULL) {
         right->next = p;
-    else
+    }
+    else {
         left = p;
+    }
 
     right = p;
 }
