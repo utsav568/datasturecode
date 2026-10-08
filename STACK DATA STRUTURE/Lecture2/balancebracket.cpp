@@ -9,7 +9,7 @@ bool isbalanced(string s){
     st.push(s[i]);
 
    }
-   else{
+   else{//s[i]==')'
     if(st.size()==0)return false;
     else st.pop();
 
@@ -21,6 +21,7 @@ bool isbalanced(string s){
 
 int main(){
   string s;
+  cout<<"Enter the bracket : ";()
   cin>>s;
   cout<<isbalanced(s);
 }

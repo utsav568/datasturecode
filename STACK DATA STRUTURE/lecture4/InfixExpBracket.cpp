@@ -16,7 +16,7 @@ int solve(int val1 ,int val2, char ch){
 int main(){
    string s ="(7+9)*4/8-3";
    stack<int>value;
-   stack<int>op;
+   stack<char>op;
    for(int i=0;i<s.length();i++){
     //check s[i] is digit
     //int assci = (int)(s[i]);//dont need in cpp

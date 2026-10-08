@@ -24,5 +24,5 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<nge[i]<<" ";
     }
-    cout<<endl;//tc(n2)
+    cout<<endl;//tc(n)
 }

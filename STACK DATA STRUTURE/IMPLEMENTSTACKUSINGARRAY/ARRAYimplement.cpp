@@ -14,6 +14,7 @@ class stack{//userdefine data struture
         }
         idx++;
         arr[idx] =val;
+       
     }
     void pop(){
         if(idx==-1){
@@ -24,7 +25,7 @@ class stack{//userdefine data struture
     }
     int top(){
         if(idx==-1){
-            cout<<"overflow"<<endl;
+            cout<<"underflow"<<endl;
             return -1;
         }
         return arr[idx];

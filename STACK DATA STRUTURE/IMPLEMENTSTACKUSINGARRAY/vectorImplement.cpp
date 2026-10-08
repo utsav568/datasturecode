@@ -15,14 +15,14 @@ class stack{//userdefine data struture
     }
     void pop(){
         if(v.size()==0){
-            cout<<"overflow"<<endl;
+            cout<<"Underflow"<<endl;
             return;
         }
        v.pop_back();
     }
     int top(){
         if(v.size()==-1){
-            cout<<"overflow"<<endl;
+            cout<<"Underflow"<<endl;
             return -1;
         }
         return v[v.size()-1];

@@ -16,7 +16,7 @@ int solve(int val1 ,int val2, char ch){
 int main(){
    string s ="2+6*4/8-3";
    stack<int>value;
-   stack<int>op;
+   stack<char>op;
    for(int i=0;i<s.length();i++){
     //check s[i] is digit
     //int assci = (int)(s[i]);//dont need in cpp
@@ -24,7 +24,7 @@ int main(){
         value.push(s[i]-48);
 
     }
-    else{
+    else {
         if(op.size()==0 || prio(s[i])>prio(op.top())) op.push(s[i]);
         else {
             //work priority(s[i]<=priority(op.top))
