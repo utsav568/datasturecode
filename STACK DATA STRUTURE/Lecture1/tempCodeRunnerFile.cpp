@@ -1,1 +1,2 @@
-  int val =90;
+
+   st.push(50);

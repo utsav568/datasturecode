@@ -35,7 +35,7 @@ void push_front(int val){
     if(s==0)head=tail=temp;
     else{
         temp->next = head;
-        temp->prev =head;
+       head->prev = temp;
         head= temp;
        
     }

@@ -9,7 +9,7 @@ int solve(int val1 ,int val2, char ch){
     else return val1/val2;
 }
 int main(){
-   string s ="79+4*8/3-";
+   string s ="345*+7-";
    stack<int>value;
   
    for(int i=0;i<s.length();i++){

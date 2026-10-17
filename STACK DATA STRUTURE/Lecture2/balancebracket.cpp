@@ -21,7 +21,12 @@ bool isbalanced(string s){
 
 int main(){
   string s;
-  cout<<"Enter the bracket : ";()
+  cout<<"Enter the bracket : ";
   cin>>s;
-  cout<<isbalanced(s);
+  bool flag = isbalanced(s);
+  if(flag==true){
+    cout<<"Balanced"<<endl;
+
+  }
+  else cout<<"Unbalanced";
 }
